@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/component_7"
+        android:title="Account" />
+    <item
+        android:id="@+id/nav_archive"
+        android:icon="@drawable/arhiveicon"
+        android:title="Archive" />
+    <item
+        android:id="@+id/nav_support"
+        android:icon="@drawable/supporticon"
+        android:title="Support" />
+</menu>

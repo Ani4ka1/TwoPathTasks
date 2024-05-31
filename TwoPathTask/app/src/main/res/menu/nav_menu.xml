@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/group_4"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/group_4"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/component_7"
+            android:title="Profile Settings"
+            android:visible="false" />
+    </group>
+</menu>

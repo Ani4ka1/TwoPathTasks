@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/evolventaregular"
+            android:textColor="@color/pastel_dark_green"
+            android:hint="Task"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTaskTitle"
+            android:fontFamily="@font/evolventaregular"
+            android:textColor="@color/pastel_dark_green"
+            android:hint="Description"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pastel_dark_green"
+            android:fontFamily="@font/evolventbold"
+            android:textSize="20dp"
+            android:text="Category"
+            android:layout_below="@id/etTaskDescription"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategory"
+            android:background="@color/pastel_dark_green"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:layout_below="@id/spinnerCategory"
+            android:fontFamily="@font/evolventbold"
+            android:textSize="18dp"
+            android:textColor="@color/pastel_dark_green"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/cbWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:layout_below="@id/spinnerCategory"
+            android:fontFamily="@font/evolventbold"
+            android:textColor="@color/pastel_dark_green"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:fontFamily="@font/evolventbold"
+            android:textSize="20dp"
+            android:textColor="@color/pastel_dark_green"
+            android:layout_below="@id/cbDaily"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDate"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnSaveTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Task"
+            android:layout_below="@id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/evolventaregular"
+            android:elevation="0dp"
+            android:background="@drawable/rounded_button_dark_green"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</ScrollView>

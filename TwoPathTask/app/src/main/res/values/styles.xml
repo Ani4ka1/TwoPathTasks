@@ -1,0 +1,17 @@
+<resources>
+    <!-- Стили для элементов NavigationView -->
+    <style name="NavMenuText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NavMenuItemBackground">
+        <item name="android:background">@color/pastel_dark_green</item>
+    </style>
+        <!-- Стили для NavigationView -->
+        <style name="NavMenuStyle">
+            <item name="android:textColor">@color/white</item>
+            <item name="android:background">@color/pastel_dark_green</item>
+            <item name="itemTextColor">@color/white</item>
+            <item name="itemIconTint">@color/white</item>
+        </style>
+</resources>
